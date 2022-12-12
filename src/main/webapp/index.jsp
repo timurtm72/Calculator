@@ -5,7 +5,7 @@
     <title>Calculator main page</title>
 </head>
 <body>
-    <h2>Формат ввода: localhost:8080/calculator?op1=Значение 1 го операнда &op2=Значение 2 го операнда &op= Оператор</h2>
+    <h2>Формат ввода: localhost:8080/calculator?op1=23&op2=45&op=plus</h2>
     <br/>
     <h2>Формат ввода операций: plus - '+', minus - '-', div - '/', mul - '*'</h2>
     <br/>

@@ -18,8 +18,8 @@ public class CalculatorServlet extends HttpServlet {
 
         Calculator calculator = (Calculator) session.getAttribute("calculator");
         String operator = request.getParameter("op").trim();
-        Integer firstOperand = Integer.parseInt(request.getParameter("op1").trim());
-        Integer secondOperand = Integer.parseInt(request.getParameter("op2").trim());
+        Double firstOperand = Double.parseDouble(request.getParameter("op1").trim());
+        Double secondOperand = Double.parseDouble(request.getParameter("op2").trim());
 
         if (calculator == null) {
             calculator = new Calculator();
