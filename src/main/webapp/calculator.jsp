@@ -1,4 +1,6 @@
-<%@ page import="model.Calculator" %><%--
+<%@ page import="model.Calculator" %>
+
+<%--
   Created by IntelliJ IDEA.
   User: timur
   Date: 12.12.2022
@@ -11,11 +13,12 @@
     <title>Calculator result page</title>
 </head>
 <body>
-<% Calculator cart = (Calculator) session.getAttribute("calculator"); %>
-<p>
-    Результат: <% cart.toString();%>
-</p>
-<br/>
-<a href="calculator-servlet">НА ГЛАВНУЮ</a>
+<% Calculator calculator = (Calculator) session.getAttribute("calculator"); %>
+<br>
+    Результат: <%=calculator.toString()%>
+<br>
+<br>
+<br>
+<a href="/">НА ГЛАВНУЮ</a>
 </body>
 </html>
